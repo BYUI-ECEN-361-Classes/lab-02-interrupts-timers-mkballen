@@ -67,7 +67,14 @@ void got_start()
 		rand_millisec =  rand() % upper_limit_millisec_to_wait;
 
 	  /**************** STUDENT TO FILL IN START HERE ********************/
-		// Step 1
+		for (int i = 0; i < 3; i++){
+			int time = 1;
+			HAL_Delay(1000);
+			time = i + 1;
+			MultiFunctionShield_Display(time);
+		}
+		//char go[] = "GO";
+		MultiFunctionShield_Display('GO');
 		// Step 2
 		// Step 3
 		// Step 4
